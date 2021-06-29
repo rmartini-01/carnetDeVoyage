@@ -1,0 +1,28 @@
+/**CSS**/
+/*La list en général*/
+.imageListView{
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #EAEAEA;
+}
+/*le fond de la barre de navigation*/
+.imageListView .scroll-bar:horizontal .track {
+	-fx-background-color: #EAEAEA;
+}
+/*le scroll thumb*/
+.imageListView .scroll-bar:horizontal .thumb {
+    -fx-background-color: #E4D8A5;
+}
+
+/*les boutons pour naviguer*/
+.imageListView .increment-button , .imageListView .decrement-button {
+-fx-background-color: transparent;
+-fx-background-radius: 10px;
+-fx-border-radius:10px;
+-fx-border-color : transparent;
+}
+.imageLisView .scroll-bar .increment-arrow , .imageLisView .scroll-bar .decrement-arrow{
+-fx-shape: "";
+-fx-padding:0;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainScene" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <fx:include fx:id="bookController" source="BookView.fxml"/>
+   <fx:include fx:id="normalPageController" source = "NormalPageView.fxml" AnchorPane.leftAnchor="240.0"/>
+   <fx:include fx:id="frontPageController" source="FrontPageView.fxml" AnchorPane.leftAnchor="240.0"/>
+   <fx:include fx:id="navigationController" source="NavigationView.fxml" AnchorPane.topAnchor="20.0"/>
+
+   <fx:include fx:id="menuController" source="MenuView.fxml"/>
+</AnchorPane>
+

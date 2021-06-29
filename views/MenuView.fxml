@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar fx:id="menuController" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+  <Menu mnemonicParsing="false" text="File">
+    <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Close"/>
+    <MenuItem mnemonicParsing="false" onAction="#newBook" text="New book"/>
+    <MenuItem mnemonicParsing="false" onAction="#readJson" text="Open"/>
+    <MenuItem mnemonicParsing="false" onAction="#saveJson" text="Save"/>
+
+  </Menu>
+  <Menu mnemonicParsing="false" text="Book">
+    <MenuItem fx:id="addPageItem" mnemonicParsing="false" onAction="#addPageItem" text="Add page"/>
+    <MenuItem fx:id="deleteTravelersItem" mnemonicParsing="false" onAction="#deleteAllTravelers"
+              text="Delete all Travelers"/>
+    <MenuItem fx:id="deletePagesItem" mnemonicParsing="false" onAction="#deleteAllPages" text="Delete all pages"/>
+  </Menu>
+</MenuBar>

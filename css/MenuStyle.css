@@ -1,0 +1,36 @@
+/*la barre du menu par défaut*/
+.menu-bar{
+    -fx-background-color: #D1A967;
+    -fx-text-fill: black;
+    -fx-font-family: Gill Sans;
+}
+/* la barre du menu réactive à la souris*/
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background-color: #FAFAEB;
+    -fx-text-fill: black;
+    -fx-font-family: Gill Sans;
+}
+/*Mettre le label noir quand on passe la souris dessus*/
+.menu-bar .label{
+        -fx-text-fill:black;
+}
+
+.menu-item .label {
+    -fx-text-fill: black;
+}
+/*Quand on passe la souris sur les items du menu, le fon devient plus foncé.*/
+.menu-item:focused {
+     -fx-background-color: #D1A967;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: black;
+    -fx-font-family: Gill Sans;
+}
+/*style du menu déroulant*/
+.context-menu , #modifierPage{
+    -fx-background-color: #FAFAEB;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
